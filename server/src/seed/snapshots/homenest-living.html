@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HomeNest Living | Home Decor & Furnishings Online</title>
+  <meta name="description" content="HomeNest Living sells home decor, textiles and small furniture online with nationwide delivery and card checkout.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEMO0000"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-DEMO0000");</script>
+</head>
+<body>
+  <div class="page">
+    <nav class="site-nav">
+      <a href="/home">Home</a>
+      <a href="/shop">Shop</a>
+      <a href="/collections">Collections</a>
+      <a href="/delivery">Delivery</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <header class="hero">
+      <h1>HomeNest Living</h1>
+      <p class="tagline">Home decor, textiles and small furniture, delivered</p>
+    </header>
+    <section class="intro">
+      <p>HomeNest Living is an online home decor store shipping nationwide. We stock around 400 SKUs across textiles, lighting and small furniture, and fulfil from our own warehouse in Lahore.</p>
+      <p>Checkout accepts card payments and cash on delivery. Order confirmation emails are sent automatically, but delivery updates are still sent manually by our support team.</p>
+      <p>Returns are accepted within seven days of delivery for unused items in original packaging.</p>
+    </section>
+    <section class="gallery">
+      <img src="/assets/cushions.jpg" width="480" height="320" alt="Handwoven cushion covers on a sofa">
+      <img src="/assets/lamp.jpg" width="480" height="320" alt="Ceramic table lamp on a side table">
+      <img src="/assets/living.jpg" width="480" height="320" alt="Styled living room corner">
+    </section>
+    <section class="shop" id="shop">
+      <h2>Shop</h2>
+      <ul class="product-grid">
+        <li class="product">
+          <h3>Handwoven cushion cover set</h3>
+          <p class="price">PKR 3,200</p>
+          <form action="/cart/add" method="post"><input type="hidden" name="sku" value="HN-CUS-11"><button type="submit">Add to cart</button></form>
+        </li>
+        <li class="product">
+          <h3>Ceramic table lamp</h3>
+          <p class="price">PKR 6,800</p>
+          <form action="/cart/add" method="post"><input type="hidden" name="sku" value="HN-LMP-04"><button type="submit">Add to cart</button></form>
+        </li>
+        <li class="product">
+          <h3>Solid wood side table</h3>
+          <p class="price">PKR 12,500</p>
+          <form action="/cart/add" method="post"><input type="hidden" name="sku" value="HN-TBL-07"><button type="submit">Add to cart</button></form>
+        </li>
+        <li class="product">
+          <h3>Cotton throw blanket</h3>
+          <p class="price">PKR 4,100</p>
+          <form action="/cart/add" method="post"><input type="hidden" name="sku" value="HN-THR-02"><button type="submit">Add to cart</button></form>
+        </li>
+        <li class="product">
+          <h3>Framed wall art trio</h3>
+          <p class="price">PKR 5,400</p>
+          <form action="/cart/add" method="post"><input type="hidden" name="sku" value="HN-ART-09"><button type="submit">Add to cart</button></form>
+        </li>
+      </ul>
+      <p class="checkout-note">Secure checkout powered by Stripe. <a href="/checkout">Proceed to checkout</a></p>
+      <script src="https://js.stripe.com/v3/"></script>
+    </section>
+    <section class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="/contact" method="post">
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" type="text" name="name" required>
+        <label for="cf-email">Email address</label>
+        <input id="cf-email" type="email" name="email" required>
+        <label for="cf-message">How can we help?</label>
+        <textarea id="cf-message" name="message" rows="4"></textarea>
+        <button type="submit">Send enquiry</button>
+      </form>
+    </section>
+    <section class="newsletter">
+      <h2>Join our newsletter</h2>
+      <form action="/subscribe" method="post" class="newsletter-form">
+        <label for="nl-email">Email</label>
+        <input id="nl-email" type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <section class="contact-details">
+      <p>Call us: <a href="tel:+92421110022">+92 42 111 0022</a></p>
+      <p>Email: <a href="mailto:support@homenestliving.example">support@homenestliving.example</a></p>
+      <p><a href="https://wa.me/923001100022">Message us on WhatsApp</a></p>
+    </section>
+    <footer class="site-footer">
+      <p>HomeNest Living, Lahore warehouse. Demo sample page.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/homenestliving">Facebook</a>
+        <a href="https://www.instagram.com/homenestliving">Instagram</a>
+        <a href="https://www.linkedin.com/company/homenestliving">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
